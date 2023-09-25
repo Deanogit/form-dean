@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Challenge Take 2!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- <div class="container"> -->
+        <header>
+            <h1 id="title">Wipeout Survey Form</h1>
+            <p id="description">Thanks for taking the time to help us improve our shred!</p>
+        </header>
+        <main>
+            <div class="main__container">
+                <form action="https://httpbin.org/get" id="survey-form">
+                    <fieldset>
+                    <div class="form__group">
+                        <label for="name-label">Name</label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Enter your name here..."
+                        required
+                        />
+                    </div>
+                    <div class="form__group">
+                        <label for="email-label">Email</label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Enter your email here..." 
+                        required
+                        />
+                    </div>
+                    <div class="form__group">
+                        <label for="number-label">Age  <span>(optional)</span></label>
+                        <input 
+                        type="number" 
+                        name="number" 
+                        id="number" 
+                        placeholder="Enter your age here..." 
+                        min="13"
+                        max="120"
+                        required 
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form__group">
+                        <label>What's your surf style?</label>
+                        <select name="style" id="dropdown">
+                            <option value="">(Select one)</option>
+                            <option value="knee">Knee-High White Water Charger!</option>
+                            <option value="waist">Waist-High Green Wave Warrior!</option>
+                            <option value="head">Over-Head Barrel Hunter!</option>
+                            <option value="pro">Brah I'm pro! Duh!</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form__group">
+                        <label>Have you ever "dropped-in" on somebody?</label>
+                        <label for="def"><input class="inline" type="radio" name="dropin" id="def"> Definitely</label>
+                        <label for="no-way"><input class="inline" type="radio" name="dropin" id="no-way"> Nooo way bro!</label>
+                        <label for="hang"><input class="inline" type="radio" name="dropin" id="hang"> Hang on.... what's a "drop-in"?</label>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                    <div class="form__group">
+                        <label>What's your favourite thing about the Wipeout community?</label>
+                        <select name="style" id="dropdown">
+                            <option class="inline" value="">Choose one below</option>
+                            <option class="inline" value="party">Party!</option>
+                            <option class="inline" value="send">SENDING IT!</option>
+                            <option class="inline" value="wipe">Wiping OUT!</option>
+                            <option class="inline" value="wave">Did you see my WAVE!!</option>
+                        </select>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                    <div class="form__group">
+                        <label>What can Wipeout do better next time? <p><span class="clue">(check all that apply)</span></p></label>
+                        <label for="parties"><input class="inline" type="checkbox" name="parties" id="parties"> Bigger Parties!</label>
+                        <label for="louder"><input class="inline" type="checkbox" name="louder" id="louder"> Louder Music!</label>
+                        <label for="hot"><input class="inline" type="checkbox" name="hot" id="hot"> More Hot Party-People!</label>
+                        <label for="booze"><input class="inline" type="checkbox" name="booze" id="booze"> Cheaper Booze!</label>
+                        <label for="send"><input class="inline" type="checkbox" name="send" id="send"> Send It Even More!</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form__group">
+                        <label>What's your favourite Wipeout story?</label>
+                       <textarea name="" id="" cols="40" rows="10" placeholder="Your favourite Wipeout story..."></textarea>
+                    </div>
+                </fieldset>
+                    <button name="submit" id="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </main>
+        <footer>
+            <p>Copyright 2022 Wipeout</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
